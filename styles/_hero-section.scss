@@ -1,0 +1,65 @@
+.background {
+  background-image: url("../images/hero-background.png");
+  background-size: cover;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  min-height: 37.5rem;
+
+  .left-section {
+    color: $darkGreen;
+
+    .text {
+      width: 24.5625rem;
+    }
+
+    h2 {
+      font-size: clamp(1rem, 5vw, 4.75rem);
+      font-family: $playfair;
+    }
+    .sub-heading {
+      font-size: 1.5rem;
+      padding: 2rem 0;
+    }
+
+    button {
+      font-size: 18px;
+      font-family: sans-serif;
+      font-weight: 700;
+      border-radius: 3px;
+      border: 2px solid $darkGreen;
+      transition: background-color 100ms ease-in-out;
+      cursor: pointer;
+    }
+    .login {
+      color: #fff;
+      background-color: $darkGreen;
+      padding: 0.8125em 0.75em;
+
+      &:hover,
+      &:focus {
+        color: $darkGreen;
+        background: transparent;
+      }
+    }
+
+    .signup {
+      color: $darkGreen;
+      padding: 0.8125em 2.8125em;
+      background: transparent;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: $darkGreen;
+      }
+    }
+  }
+
+  .right-section img {
+    transform: rotate(4.66deg);
+  }
+}

@@ -61,6 +61,7 @@ header .green-section .read-here {
 }
 .nav-section nav .logo {
   width: 13.1875rem;
+  cursor: pointer;
 }
 .nav-section nav .nav-links a {
   color: #004f30;
@@ -91,4 +92,60 @@ header .green-section .read-here {
 }
 .nav-section nav .login-btn:hover {
   background-color: #806e15;
+}
+
+.background {
+  background-image: url("../images/hero-background.png");
+  background-size: cover;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  min-height: 37.5rem;
+}
+.hero-section .left-section {
+  color: #004f30;
+}
+.hero-section .left-section .text {
+  width: 24.5625rem;
+}
+.hero-section .left-section h2 {
+  font-size: clamp(1rem, 5vw, 4.75rem);
+  font-family: "Playfair Display", serif;
+}
+.hero-section .left-section .sub-heading {
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}
+.hero-section .left-section button {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 700;
+  border-radius: 3px;
+  border: 2px solid #004f30;
+  transition: background-color 100ms ease-in-out;
+  cursor: pointer;
+}
+.hero-section .left-section .login {
+  color: #fff;
+  background-color: #004f30;
+  padding: 0.8125em 0.75em;
+}
+.hero-section .left-section .login:hover, .hero-section .left-section .login:focus {
+  color: #004f30;
+  background: transparent;
+}
+.hero-section .left-section .signup {
+  color: #004f30;
+  padding: 0.8125em 2.8125em;
+  background: transparent;
+}
+.hero-section .left-section .signup:hover, .hero-section .left-section .signup:focus {
+  color: #fff;
+  background-color: #004f30;
+}
+.hero-section .right-section img {
+  transform: rotate(4.66deg);
 }/*# sourceMappingURL=style.css.map */
