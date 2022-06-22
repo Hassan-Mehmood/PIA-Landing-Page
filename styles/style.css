@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 79.375rem;
+  width: 88.125%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #004f30;
+}
+header .green-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 3.8125rem;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+header .green-section a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+header .green-section a:not(:last-child) {
+  margin-right: 2.125rem;
+}
+header .green-section .read-here {
+  color: #bbb286;
+  margin-left: 5px;
+  text-decoration: underline;
+}
+
+.nav-section {
+  padding-top: 2.1875rem;
+}
+.nav-section nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-section nav .logo {
+  width: 13.1875rem;
+}
+.nav-section nav .nav-links a {
+  color: #004f30;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: border 100ms ease-in-out;
+}
+.nav-section nav .nav-links a:not(:last-child) {
+  margin-right: 4.25rem;
+}
+.nav-section nav .nav-links a:hover {
+  color: #1b1d1c;
+  border-bottom: 2px solid #1b1d1c;
+}/*# sourceMappingURL=style.css.map */
