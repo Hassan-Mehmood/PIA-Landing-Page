@@ -1,77 +1,103 @@
 header {
   background-color: $darkGreen;
-  .green-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 3.8125rem;
+}
 
-    color: #ffffff;
-    font-family: sans-serif;
+.green-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 3.8125rem;
 
-    a {
-      display: inline-block;
-      text-decoration: none;
-      color: inherit;
-      &:not(:last-child) {
-        margin-right: 2.125rem;
-      }
+  color: #ffffff;
+  font-family: sans-serif;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    &:not(:last-child) {
+      margin-right: 2.125rem;
     }
+  }
 
-    .read-here {
-      color: $lightYelllow;
-      margin-left: 5px;
-      text-decoration: underline;
-    }
+  .read-here {
+    color: $lightYelllow;
+    margin-left: 5px;
+    text-decoration: underline;
   }
 }
 
 .nav-section {
   padding-top: 2.1875rem;
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
 
-    .logo {
-      width: 13.1875rem;
-      cursor: pointer;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    width: 13.1875rem;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    a {
+      color: $darkGreen;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1.125rem;
+      font-family: sans-serif;
+      font-weight: 500;
+      border-bottom: 2px solid transparent;
+      transition: border 100ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 4.25rem;
+      }
+
+      &:hover {
+        color: $black;
+        border-bottom: 2px solid $black;
+      }
     }
+  }
 
+  .login-btn {
+    color: #ffffff;
+    background-color: $yellow;
+    font-size: 1.125rem;
+    padding: 1.25rem 2.125rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 100ms ease-in-out;
+
+    &:hover {
+      background-color: #806e15;
+    }
+  }
+}
+
+@include for-desktop-down {
+  nav {
     .nav-links {
       a {
-        color: $darkGreen;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 1.125rem;
-        font-family: sans-serif;
-        font-weight: 500;
-        border-bottom: 2px solid transparent;
-        transition: border 100ms ease-in-out;
-
         &:not(:last-child) {
-          margin-right: 4.25rem;
-        }
-
-        &:hover {
-          color: $black;
-          border-bottom: 2px solid $black;
+          margin-right: 1.5rem;
         }
       }
     }
+  }
 
-    .login-btn {
-      color: #ffffff;
-      background-color: $yellow;
-      font-size: 1.125rem;
-      padding: 1.25rem 2.125rem;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-      transition: background-color 100ms ease-in-out;
+  .container {
+    width: 90%;
+  }
 
-      &:hover {
-        background-color: #806e15;
+  .green-section {
+    a {
+      &:not(:last-child) {
+        margin-right: 1rem;
       }
     }
   }

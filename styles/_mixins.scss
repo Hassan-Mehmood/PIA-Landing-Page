@@ -1,0 +1,5 @@
+@mixin for-desktop-down {
+  @media (max-width: 64em) {
+    @content;
+  }
+}
