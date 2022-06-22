@@ -66,7 +66,7 @@ header .green-section .read-here {
   color: #004f30;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: sans-serif;
   font-weight: 500;
   border-bottom: 2px solid transparent;
@@ -78,4 +78,17 @@ header .green-section .read-here {
 .nav-section nav .nav-links a:hover {
   color: #1b1d1c;
   border-bottom: 2px solid #1b1d1c;
+}
+.nav-section nav .login-btn {
+  color: #ffffff;
+  background-color: #ad9419;
+  font-size: 1.125rem;
+  padding: 1.25rem 2.125rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 100ms ease-in-out;
+}
+.nav-section nav .login-btn:hover {
+  background-color: #806e15;
 }/*# sourceMappingURL=style.css.map */
