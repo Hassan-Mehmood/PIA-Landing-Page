@@ -222,4 +222,10 @@ nav .login-btn:hover {
 
 .slider-section {
   padding-top: 8.125rem;
+}
+.slider-section .section-heading {
+  color: #004f30;
+  font-size: 3rem;
+  text-align: center;
+  font-family: sans-serif;
 }/*# sourceMappingURL=style.css.map */
