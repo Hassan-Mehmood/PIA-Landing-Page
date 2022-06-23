@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>PIA | Come fly with us</title>
   </head>
@@ -86,12 +89,59 @@
       </div>
     </section>
 
-    <section class="slider-section container">
+    <section class="slider-section">
       <h3 class="section-heading">Valuable Deals</h3>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <div class="slide-text">
+                <h3>Islamabad</h3>
+                <p>RS. 15,000</p>
+              </div>
+              <img src="./images/islamabad-img.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <div class="slide-text">
+                <h3>Lahore</h3>
+                <p>RS. 25,000</p>
+              </div>
+              <img src="./images/lahore-img.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <div class="slide-text">
+                <h3>Karachi</h3>
+                <p>RS. 10,000</p>
+              </div>
+              <img src="./images/karachi-img.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <div class="slide-text">
+                <h3>Multan</h3>
+                <p>RS. 19,000</p>
+              </div>
+              <img src="./images/multan-img.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </section>
 
     <div style="margin-bottom: 500px"></div>
 
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./Javascript/app.js"></script>
   </body>
 </html>
